@@ -1,0 +1,16 @@
+
+type Employee {
+    id: ID!
+    name: String!
+    age: Int
+}
+
+# The Root Query for the application
+type Query {
+    getEmployees(count: Int, offset: Int): [Employee]!
+}
+
+# The Root Mutation for the application
+#type Mutation {
+#    writePost(title: String!, text: String!, category: String, author: String!) : Post!
+#}
